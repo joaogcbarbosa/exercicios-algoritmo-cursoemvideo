@@ -1,0 +1,16 @@
+Algoritmo "4"
+
+Var
+
+   n1, n2, s: real
+
+Inicio
+
+      Escreva("Primeiro número: ")
+      Leia(n1)
+      Escreva("Segundo número: ")
+      Leia(n2)
+      s <- (n1 + n2)
+      Escreva("A soma entre",n1," e",n2," é igual a",s)
+
+Fimalgoritmo

@@ -1,0 +1,16 @@
+Algoritmo "3"
+
+Var
+
+   nome: caractere
+   salario: real
+
+Inicio
+
+      Escreva("Qual é seu nome? " )
+      Leia(nome)
+      Escreva("Quanto você ganha? R$")
+      Leia(salario)
+      Escreva("O funcionário ",nome," tem um salário de R$",salario," em junho.")
+      
+Fimalgoritmo

@@ -1,0 +1,14 @@
+Algoritmo "9"
+
+Var
+
+   reais, dolares: real
+
+Inicio
+
+      Escreva("Quantos reais você tem na carteira? R$")
+      Leia(reais)
+      dolares <- reais/5.00
+      Escreva("Você pode comprar um total de US$",dolares:5:2)
+
+Fimalgoritmo

@@ -1,0 +1,18 @@
+Algoritmo "7"
+
+Var
+
+   num: real
+   dobro: real
+   tercaParte: real
+
+Inicio
+
+      Escreva("Digite um número para saber seu dobro e sua terça parte: ")
+      Leia(num)
+      dobro <- num*2
+      tercaParte <- num/3
+      Escreval("O dobro de",num," é", dobro)
+      Escreva("E sua terça parte é",tercaParte)
+
+Fimalgoritmo

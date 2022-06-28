@@ -1,0 +1,18 @@
+Algoritmo "10"
+
+Var
+
+   l, h, a, tinta: real
+
+Inicio
+
+     Escreva("Altura da parede(metros): ")
+     Leia(h)
+     Escreva("Largura da parede(metros): ")
+     Leia(l)
+     a <- l*h
+     tinta <- a/2
+     Escreval("A parede tem uma área de",a,"m²")
+     Escreva("A quantidade de tinta necessária é",tinta," litros")
+
+Fimalgoritmo

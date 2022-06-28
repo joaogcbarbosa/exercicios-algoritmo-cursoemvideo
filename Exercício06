@@ -1,0 +1,16 @@
+Algoritmo "6"
+
+Var
+
+   num, a, s: inteiro
+
+
+Inicio
+
+      Escreva("Digite um número: ")
+      Leia(num)
+      a <- num - 1
+      s <- num + 1
+      Escreva("O antecessor de",num," é",a," e seu sucessor é",s)
+
+Fimalgoritmo

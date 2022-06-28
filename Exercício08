@@ -1,0 +1,24 @@
+Algoritmo "8"
+
+Var
+
+   d, km, hm, dam, cm, mm, dm: real
+
+Inicio
+
+      Escreva("Distância em metros: ")
+      Leia(d)
+      km <- d/1000
+      hm <- d/100
+      dam <- d/10
+      dm <- d*10
+      cm <- d*100
+      mm <- d*1000
+      Escreval("Em Km:",km)
+      Escreval("Em HM:",hm)
+      Escreval("Em Dam:",dam)
+      Escreval("Em dm:",dm)
+      Escreval("Em cm:",cm)
+      Escreva("Em mm:",mm)
+
+Fimalgoritmo

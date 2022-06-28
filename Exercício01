@@ -1,0 +1,12 @@
+Algoritmo "01"
+
+Var
+
+   msg: caractere
+
+Inicio
+
+      msg <- "Olá, mundo!"
+      Escreva(msg)
+
+Fimalgoritmo

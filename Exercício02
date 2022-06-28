@@ -1,0 +1,13 @@
+Algoritmo "02"
+
+Var
+
+   nome: caractere
+
+Inicio
+
+      Escreva("Qual é seu nome? ")
+      Leia(nome)
+      Escreva ("Olá, ", nome, ". Seja bem-vindo(a)!")
+
+Fimalgoritmo
