@@ -1,0 +1,17 @@
+Algoritmo "14"
+
+Var
+
+ distancia, preco: real
+ dias: inteiro
+
+Inicio
+
+      Escreva("Quantos Km percorreu? ")
+      Leia(distancia)
+      Escreva("Por quantos dias? ")
+      Leia(dias)
+      preco <- (90*dias)+(0.20*distancia)
+      Escreva("O valor total a ser pago é de R$",preco)
+
+Fimalgoritmo

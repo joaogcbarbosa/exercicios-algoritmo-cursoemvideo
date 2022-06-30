@@ -1,0 +1,19 @@
+Algoritmo "16"
+
+Var
+
+   cigarros, anos, tempoPerdidoMinutos, dias: inteiro
+   tempoPerdidoDias: real
+
+Inicio
+
+      Escreva("Quantos cigarros você fuma por dia? ")
+      Leia(cigarros)
+      Escreva("Há quantos anos você fuma? ")
+      Leia(anos)
+      dias <- anos*365
+      tempoPerdidoMinutos <- dias*cigarros*10
+      tempoPerdidoDias <- tempoPerdidoMinutos/1440
+      Escreva("Você já perdeu",tempoPerdidoDias," dias de vida.")
+
+Fimalgoritmo

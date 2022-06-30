@@ -1,0 +1,15 @@
+Algoritmo "15"
+
+Var
+
+   dias: inteiro
+   salario: real
+
+Inicio
+
+      Escreva("Dias trabalhados no mês: ")
+      Leia(dias)
+      salario <- dias*8*25
+      Escreva("Esse mês seu salário está totalizado em R$",salario)
+      
+Fimalgoritmo

@@ -1,0 +1,23 @@
+Algoritmo "18"
+
+Var
+
+   anoNasc, anoAtual, idade: inteiro
+
+Inicio
+
+      anoAtual <- 2022
+      Escreva("Qual é seu ano de nascimento? ")
+      Leia(anoNasc)
+      idade <- anoAtual - anoNasc
+      se (idade > 18) entao
+         Escreva("Voto obrigatório!")
+      senao
+           se (idade >= 16) e (idade < 18) entao
+              Escreva("Voto opcional.")
+           senao
+                Escreva("Você ainda não tem idade para votar.")
+           FimSe
+      FimSe
+
+Fimalgoritmo

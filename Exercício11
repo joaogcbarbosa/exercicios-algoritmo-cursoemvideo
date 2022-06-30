@@ -1,0 +1,18 @@
+Algoritmo "11"
+
+Var
+
+   a, b, c, delta: real
+
+Inicio
+
+      Escreva("Coeficiente A: ")
+      Leia(a)
+      Escreva("Coeficiente B: ")
+      Leia(b)
+      Escreva("Coeficiente C: ")
+      Leia(c)
+      delta <- (b^2)-4*a*c
+      Escreva("O valor de delta é", delta)
+
+Fimalgoritmo

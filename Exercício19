@@ -1,0 +1,22 @@
+Algoritmo "19"
+
+Var
+
+   nome: caractere
+   n1, n2, media: real
+
+Inicio
+
+      Escreva("Nome do aluno: ")
+      Leia(nome)
+      Escreva("Nota P1: ")
+      Leia(n1)
+      Escreva("Nota P2: ")
+      Leia(n2)
+      media <- (n1+n2)/2
+      Escreval("A média do aluno é",media)
+      se (media >= 7) entao
+         Escreva("O aluno ",nome," teve um bom aproveitamento!")
+      FimSe
+
+Fimalgoritmo

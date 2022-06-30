@@ -1,0 +1,17 @@
+Algoritmo "20"
+
+Var
+
+   num: inteiro
+   
+Inicio
+
+      Escreva("Digite um número inteiro: ")
+      Leia(num)
+      se (num % 2 = 0) entao
+         Escreva(num," é um número par!")
+      senao
+           Escreva(num," é um número ímpar!")
+      FimSe
+
+Fimalgoritmo

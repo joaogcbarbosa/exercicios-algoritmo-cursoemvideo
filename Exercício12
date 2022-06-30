@@ -1,0 +1,14 @@
+Algoritmo "12"
+
+Var
+
+  preco, precoComDesconto: real
+
+Inicio
+
+      Escreva("Preço do produto: R$ ")
+      Leia(preco)
+      precoComDesconto <- preco*0.95
+      Escreva("Comcom desconto o preço vai de R$",preco," para R$",precoComDesconto)
+
+Fimalgoritmo

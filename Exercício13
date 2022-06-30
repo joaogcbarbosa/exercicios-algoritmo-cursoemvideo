@@ -1,0 +1,14 @@
+Algoritmo "13"
+
+Var
+
+   salario, salarioComAumento: real
+
+Inicio
+
+      Escreva("Insira seu salário: R$")
+      Leia(salario)
+      salarioComAumento <- salario*1.15
+      Escreva("O salário com aumento é R$",salarioComAumento)
+
+Fimalgoritmo

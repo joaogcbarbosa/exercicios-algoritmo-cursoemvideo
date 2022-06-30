@@ -1,0 +1,15 @@
+Algoritmo "17"
+
+Var
+   v, multa: inteiro
+
+Inicio
+      Escreva("Velocidade do carro (km/h): ")
+      Leia(v)
+      se (v > 80) entao
+         multa <- v*5
+         Escreval("Multado! Você dirigiu acima da velocidade permitida e terá que pagar uma multa de R$",multa)
+      FimSe
+      Escreva("Dirija com segurança!")
+      
+Fimalgoritmo
