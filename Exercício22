@@ -1,0 +1,24 @@
+Algoritmo "22"
+
+Var
+
+   anoNasc, anoAtual, anoAlist, idade: inteiro
+
+Inicio
+
+      anoAtual <- 2022
+      Escreva("Ano de nascimento: ")
+      Leia(anoNasc)
+      idade <- anoAtual - anoNasc
+      anoAlist <- anoNasc + 18
+      se (idade = 18) entao
+         Escreva("Você deve se alistar esse ano!")
+      senao
+           se (idade > 18) entao
+              Escreva("Você deveria ter se alistado em ",anoAlist)
+           senao
+              Escreva("Você deve se alistar em ", anoAlist)
+           FimSe
+      FimSe
+
+Fimalgoritmo

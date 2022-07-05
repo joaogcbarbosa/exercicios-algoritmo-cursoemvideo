@@ -1,0 +1,30 @@
+Algoritmo "30"
+
+Var
+
+   r1, r2, r3: real
+
+Inicio
+
+      Escreva("Segmento 1: ")
+      Leia(r1)
+      Escreva("Segmento 2: ")
+      Leia(r2)
+      Escreva("Segmento 3: ")
+      Leia(r3)
+      se (r1 < r2 + r3) e (r2 < r1 + r3) e (r3 < r1 + r2) entao
+         se (r1 = r2) e (r2 = r3) entao
+            Escreva("É possível formar um triângulo com esses valores e ele seria EQUILÁTERO.")
+         senao
+              se (r1 = r2) ou (r1 = r3) ou (r2 = r3) entao
+                 Escreva("É possível formar um triângulo com esses valores e ele seria ISÓSCELES.")
+              FimSe
+              se (r1 <> r2) e (r2 <> r3) e (r1<>r3) entao
+                  Escreva("É possível formar um triângulo com esses valores e ele seria ESCALENO.")
+              FimSe
+         FimSe
+      senao
+           Escreva("Não é possível formar um triângulo com esses valores.")
+      FimSe
+
+Fimalgoritmo

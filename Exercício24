@@ -1,0 +1,19 @@
+Algoritmo "24"
+
+Var
+
+   dist, passagem: real
+   
+Inicio
+
+      Escreva("Sua viagem será de quantos Km? ")
+      Leia(dist)
+      se (dist <= 200) entao
+         passagem <- dist*0.50
+         Escreva("A sua passagem custará R$",passagem:5:2)
+      senao
+           passagem <- dist*0.45
+           Escreva("A sua passagem custará R$", passagem:5:2)
+      FimSe
+      
+Fimalgoritmo

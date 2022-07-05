@@ -1,0 +1,29 @@
+Algoritmo "23"
+
+Var
+
+   nome: caractere
+   totalCompras, totalComprasMasc, totalComprasFem: real
+   sexo: inteiro
+
+Inicio
+
+      Escreva("Nome do cliente: ")
+      Leia(nome)
+      EscrevaL("[1] Masculino")
+      EscrevaL("[2] Feminino")
+      Escreva("Sexo do cliente [1/2]: ")
+      Leia(sexo)
+      Escreva("Valor total das compras: R$")
+      Leia(totalCompras)
+      se (sexo = 1) entao
+         totalComprasMasc <- totalCompras*0.95
+         EscrevaL("O cliente ",nome," tem 5% de desconto.")
+         Escreva("O valor total da compra é de R$",totalComprasMasc:5:2)
+      senao
+           totalComprasFem <- totalCompras*0.87
+           EscrevaL("A cliente ",nome," tem 13% de desconto.")
+           Escreva("O valor total da compra é de R$",totalComprasFem:5:2)
+      FimSe
+
+Fimalgoritmo

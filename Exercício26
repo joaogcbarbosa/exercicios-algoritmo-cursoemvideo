@@ -1,0 +1,19 @@
+Algoritmo "26"
+
+Var
+
+   n1, n2: inteiro
+
+Inicio
+
+      Escreva("Digite um número: ")
+      Leia(n1)
+      Escreva("Digite outro: ")
+      Leia(n2)
+      se (n1 > n2) entao
+         Escreva("O valor", n1," é maior que",n2)
+      senao
+           Escreva("O valor", n2," é maior que",n1)"
+      FimSe
+
+Fimalgoritmo

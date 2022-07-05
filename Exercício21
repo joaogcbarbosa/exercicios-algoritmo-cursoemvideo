@@ -1,0 +1,25 @@
+Algoritmo "21"
+
+Var
+
+   ano: inteiro
+
+Inicio
+
+      Escreva("Digite um ano para saber se é bissexto: ")
+      Leia(ano)
+      se (ano % 4 = 0) entao
+         se (ano % 100 = 0) entao
+            se (ano % 400 = 0) entao
+               Escreva("É um ano bissexto")
+            senao
+                 Escreva("Não é um ano bissexto.")
+            FimSe
+         senao
+              Escreva("É um ano bissexto!")
+         FimSe
+      senao
+           Escreva("Não é um ano bissexto.")
+      FimSe
+
+Fimalgoritmo

@@ -1,0 +1,24 @@
+Algoritmo "27"
+
+Var
+
+   n1, n2, media: real
+
+Inicio
+
+      Escreva("Nota P1: ")
+      Leia(n1)
+      Escreva("Nota P2: ")
+      Leia(n2)
+      media <- (n1+n2)/2
+      se (media <= 4.9) entao
+         Escreva("Média ",media:3:1,". REPROVADO")
+      senao
+           se (media > 4.9) e (media <= 6.9) entao
+              Escreva("Média ",media:3:1,". RECUPERAÇÃO")
+           senao
+                Escreva("Média ",media:3:1,". APROVADO")
+           FimSe
+      FimSe
+
+Fimalgoritmo

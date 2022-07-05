@@ -1,0 +1,24 @@
+Algoritmo "28"
+
+Var
+
+   L, C, A: real
+
+Inicio
+
+      Escreva("Largura do terreno(m): ")
+      Leia(L)
+      Escreva("Comprimento do terreno(m): ")
+      Leia(C)
+      A <- L*C
+      se (A < 100) entao
+         Escreva("Seu terreno tem ",A,"m². TERRENO POPULAR.")
+      senao
+           se (A >= 100) e (A <= 500) entao
+              Escreva("Seu terreno tem ",A,"m². TERRENO MASTER")
+           senao
+                Escreva("Seu terreno tem ",A,"m². TERRENO VIP")
+           FimSe
+      FimSe
+      
+Fimalgoritmo

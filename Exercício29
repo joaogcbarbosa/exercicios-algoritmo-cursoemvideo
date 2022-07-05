@@ -1,0 +1,31 @@
+Algoritmo "29"
+
+Var
+
+   nome: caractere
+   sal, novoSal: real
+   anos: inteiro
+
+Inicio
+
+      Escreva("Nome do funcionário: ")
+      Leia(nome)
+      Escreva("Salário: R$")
+      Leia(sal)
+      Escreva("Há quantos anos trabalha na empresa? ")
+      Leia(anos)
+      se (anos <= 3) entao
+         novoSal <- sal*1.03
+         Escreva("Novo salário de ",nome,": R$",novoSal)
+      senao
+           se (anos > 3) e (anos <= 10) entao
+           novoSal <- sal*1.125
+           Escreva("Novo salário de ",nome,": R$",novoSal)
+           FimSe
+           se (anos > 10) entao
+           novoSal <- sal*1.20
+           Escreva("Novo salário de ",nome,": R$",novoSal)
+           FimSe
+      FimSe
+
+Fimalgoritmo
