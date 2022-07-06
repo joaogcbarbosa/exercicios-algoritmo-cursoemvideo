@@ -1,0 +1,48 @@
+Algoritmo "37"
+
+Var
+
+   sal, novoSal: real
+   sexo, anos: inteiro
+
+Inicio
+
+      Escreva("Salário: R$")
+      Leia(sal)
+      EscrevaL("Sexo:")
+      EscrevaL("[1] Masculino;")
+      EscrevaL("[2] Feminino.")
+      Escreva("1 ou 2? ")
+      Leia(sexo)
+      Escreva("Há quantos anos trabalha na empresa? ")
+      Leia(anos)
+      Escolha sexo
+              Caso 1
+                   se (anos < 20) entao
+                      novoSal <- sal*1.03
+                      Escreva("Com aumento de 3% seu salário é de R$",novoSal:5:2)
+                   senao
+                        se (anos >= 20) e (anos <= 30) entao
+                           novoSal <- sal*1.13
+                           Escreva("Com aumento de 13% seu salário é de R$",novoSal:5:2)
+                        senao
+                             novoSal <- sal*1.25
+                             Escreva("Com aumento de 25% seu salário é de R$",novoSal:5:2)
+                        FimSe
+                   FimSe
+              Caso 2
+                   se (anos < 15) entao
+                      novoSal <- sal*1.05
+                      Escreva("Com aumento de 5% seu salário é de R$",novoSal:5:2)
+                   senao
+                        se (anos >= 15) e (anos <= 20) entao
+                           novoSal <- sal*1.12
+                           Escreva("Com aumento de 12% seu salário é de R$",novoSal:5:2)
+                        senao
+                             novoSal <- sal*1.23
+                             Escreva("Com aumento de 23% seu salário é de R$",novoSal:5:2)
+                        FimSe
+                   FimSe
+      FimEscolha
+
+Fimalgoritmo

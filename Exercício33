@@ -1,0 +1,24 @@
+Algoritmo "33"
+
+Var
+
+   casa, sal, prestacao: real
+   anos, meses: inteiro
+
+Inicio
+
+      Escreva("Valor da casa: R$")
+      Leia(casa)
+      Escreva("Salário: R$")
+      Leia(sal)
+      Escreva("Em quantos anos deseja financiar? ")
+      Leia(anos)
+      meses <- anos*12
+      prestacao <- casa/meses
+      se (prestacao > sal*0.3) entao
+         Escreva("Empréstimo NEGADO.")
+      senao
+           Escreva("Empréstimo APROVADO.")
+      FimSe
+
+Fimalgoritmo

@@ -1,0 +1,25 @@
+Algoritmo "36"
+
+Var
+
+   horas: inteiro
+   recompensa: real
+
+Inicio
+
+      Escreva("Quantas horas de atividade física você praticou esse mês? ")
+      Leia(horas)
+      se (horas <= 10) entao
+         recompensa <- horas*2*0.05
+         Escreva("Com o total de",horas,"h de atividade física a recompensa é de R$",recompensa:5:2)
+      senao
+           se (horas > 10) e (horas <= 20) entao
+              recompensa <- horas*5*0.05
+              Escreva("Com o total de",horas,"h de atividade física a recompensa é de R$",recompensa:5:2)
+           senao
+                recompensa <- horas*10*0.05
+                Escreva("Com o total de",horas,"h de atividade física a recompensa é de R$",recompensa:5:2)
+           FimSe
+      FimSe
+
+Fimalgoritmo

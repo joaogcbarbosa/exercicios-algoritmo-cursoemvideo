@@ -1,0 +1,16 @@
+Algoritmo "38"
+
+Var
+
+  cont: inteiro
+
+Inicio
+
+      cont <- 6
+      Enquanto (cont <= 11) faça
+          Escreva(cont)
+          cont <- cont + 1
+      FimEnquanto
+      Escreva(" Acabou!")
+      
+Fimalgoritmo

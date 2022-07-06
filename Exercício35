@@ -1,0 +1,37 @@
+Algoritmo "35"
+
+Var
+
+   carro, dias, dist: inteiro
+   aluguel: real
+   
+Inicio
+
+      Escreval("Qual tipo de carro foi alugado?")
+      Escreval("[1] Popular;")
+      Escreval("[2] Luxo.")
+      Escreva("Insira [1] ou [2]: ")
+      Leia(carro)
+      Escreva("Por quantos dias alugou o carro? ")
+      Leia(dias)
+      Escreva("Quantos km percorreu com o carro? ")
+      Leia(dist)
+      se (carro = 1) entao
+         se (dist <= 100) entao
+            aluguel <- (90*dias)+(0.20*dist)
+            Escreva("R$",aluguel)
+         senao
+              aluguel <- (90*dias)+(0.10*dist)
+              Escreva("R$",aluguel)
+         FimSe
+      senao
+           se (dist <= 200) entao
+              aluguel <- (150*dias)+(0.30*dist)
+              Escreva("R$",aluguel)
+           senao
+                aluguel <- (150*dias)+(0.25*dist)
+                Escreva("R$",aluguel)
+           FimSe
+      FimSe
+      
+Fimalgoritmo

@@ -1,0 +1,16 @@
+Algoritmo "40"
+
+Var
+
+   c: inteiro
+
+Inicio
+
+      c <- 0
+      Enquanto (c <= 18) faça
+            Escreva(c)
+            c <- c + 3
+      FimEnquanto
+      Escreva(" Acabou")
+      
+FimAlgoritmo

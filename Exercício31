@@ -1,0 +1,48 @@
+Algoritmo "31"
+
+Var
+
+   jogador, computador: inteiro
+
+Inicio
+
+      Escreval("-----------------")
+      Escreval("     JOKENPÔ     ")
+      Escreval("-----------------")
+      Escreval("[0] Pedra;")
+      Escreval("[1] Papel;")
+      Escreval("[2] Tesoura.")
+      Escreva("Qual você escolhe (0, 1 ou 2)? ")
+      Leia(jogador)
+      computador <- randi(3)
+      se (jogador = computador) entao
+         se (jogador = 0) entao
+            Escreva("Nós dois escolhemos PEDRA. Empate!")
+         senao
+              se (jogador = 1) entao
+                 Escreva("Nós dois escolhemos PAPEL. Empate!")
+              senao
+                   Escreva("Nós dois escolhemos TESOURA. Empate!")
+              FimSe
+         FimSe
+      senao
+           se (jogador = 0) e (computador = 1) entao
+              Escreva("Você escolheu PEDRA e eu escolhi PAPEL. Ganhei!")
+           FimSe
+           se (jogador = 0) e (computador = 2) entao
+              Escreva("Você escolheu PEDRA e eu escolhi TESOURA. Ganhou!")
+           FimSe
+           se (jogador = 1) e (computador = 0) entao
+              Escreva("Você escolheu PAPEL e eu escolhi PEDRA. Ganhou!")
+           FimSe
+           se (jogador = 1) e (computador = 2) entao
+              Escreva("Você escolheu PAPEL e eu escolhi TESOURA. Ganhei!")
+           FimSe
+           Se (jogador = 2) e (computador = 0) entao
+              Escreva("Você escolheu TESOURA e eu escolhi PEDRA. Ganhei!")
+           FimSe
+           Se (jogador = 2) e (computador = 1) entao
+              Escreva("Você escolheu TESOURA e eu escolhi PAPEL. Ganhou!")
+           FimSe
+      FimSe
+Fimalgoritmo

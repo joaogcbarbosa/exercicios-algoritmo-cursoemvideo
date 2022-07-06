@@ -1,0 +1,16 @@
+Algoritmo "39"
+
+Var
+
+   c: inteiro
+
+Inicio
+
+      c <- 10
+      Enquanto (c >= 3) faça
+            Escreva(c)
+            c <- c - 1
+      FimEnquanto
+      Escreva(" Acabou!")
+
+Fimalgoritmo

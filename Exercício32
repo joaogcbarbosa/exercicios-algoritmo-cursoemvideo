@@ -1,0 +1,19 @@
+Algoritmo "32"
+
+Var
+
+   jogador, computador: inteiro
+
+Inicio
+
+      computador <- (randi(5) + 1)
+      Escreval("Pensei em um número de 1 a 5. Tenta descobrir!")
+      Escreva("Qual o seu palpite? ")
+      Leia(jogador)
+      se (jogador = computador) entao
+         Escreva("Acertou! Eu escolhi",computador)
+      senao
+           Escreva("Errou! Eu escolhi",computador)
+      FimSe
+      
+Fimalgoritmo
