@@ -1,0 +1,17 @@
+Algoritmo "46"
+
+Var
+
+   c, s: inteiro
+
+Inicio
+
+      s <- 0
+      c <- 6
+      Repita
+            s <- s + c
+            c <- c + 2
+      Até (c > 100)
+      Escreva(s)
+      
+Fimalgoritmo

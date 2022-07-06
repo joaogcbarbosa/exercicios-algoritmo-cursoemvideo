@@ -1,0 +1,27 @@
+Algoritmo "49"
+
+
+
+Var
+
+   c, num, contPar, contImp: inteiro
+
+Inicio
+
+      c <- 1
+      contPar <- 0
+      contImp <- 0
+      
+      Repita
+            Escreva(c,"º número: ")
+            Leia(num)
+            Se (num % 2 = 0) entao
+               contPar <- contPar + 1
+            senao
+                 contImp <- contImp + 1
+            FimSe
+            c <- c + 1
+      Até (c > 6)
+      Escreva(contImp," números ímpares e",contPar," números pares.")
+      
+Fimalgoritmo

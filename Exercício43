@@ -1,0 +1,20 @@
+Algoritmo "43"
+
+Var
+
+   c: inteiro
+
+Inicio
+
+      c <- 30
+      Enquanto (c >= 1) faça
+               se (c % 4 = 0) entao
+                  Escreva("[",c,"]")
+               senao
+                    Escreva(c)
+               FimSe
+               c <- c - 1
+      FimEnquanto
+      Escreva(" Acabou!")
+
+Fimalgoritmo

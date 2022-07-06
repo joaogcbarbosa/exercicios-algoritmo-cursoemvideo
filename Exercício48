@@ -1,0 +1,19 @@
+Algoritmo "48"
+
+Var
+
+   c, s, num: inteiro
+
+Inicio
+
+      s <- 0
+      c <- 1
+      Enquanto (c <= 7) faça
+               Escreva(c,"º número: ")
+               Leia(num)
+               c <- c + 1
+               s <- s + num
+      FimEnquanto
+      Escreva("A soma é igual a",s)
+      
+Fimalgoritmo

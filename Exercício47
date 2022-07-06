@@ -1,0 +1,17 @@
+Algoritmo "47"
+
+Var
+
+   c, s: inteiro
+
+Inicio
+
+      s <- 0
+      c <- 500
+      Repita
+            s <- s + c
+            c <- c - 5
+      Até (c < 0)
+      Escreva(s)
+
+Fimalgoritmo

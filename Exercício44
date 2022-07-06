@@ -1,0 +1,21 @@
+Algoritmo "44"
+
+Var
+
+   a0, an, r: inteiro
+
+Inicio
+
+      Escreva("Primeiro termo: ")
+      Leia(a0)
+      Escreva("Último termo: ")
+      Leia(an)
+      Escreva("Razão: ")
+      Leia(r)
+      Enquanto (r <= an) faça
+               Escreva(r)
+               r <- a0 + r
+      FimEnquanto
+      Escreva(" Acabou!")
+
+Fimalgoritmo

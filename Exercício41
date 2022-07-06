@@ -1,0 +1,16 @@
+Algoritmo "41"
+
+Var
+
+   c: inteiro
+
+Inicio
+
+      c <- 100
+      Enquanto (c >= 0) faça
+               Escreva(c)
+               c <- c - 5
+      FimEnquanto
+      Escreva(" Acabou")
+
+Fimalgoritmo

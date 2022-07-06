@@ -1,0 +1,28 @@
+Algoritmo "45"
+
+Var
+
+   a0, an, r: inteiro
+
+Inicio
+
+      Escreva("Primeiro termo: ")
+      Leia(a0)
+      Escreva("Último termo: ")
+      Leia(an)
+      Escreva("Razão: ")
+      Leia(r)
+      se (a0 < an) entao
+         Enquanto (a0 <= an) faça
+                  Escreva(a0)
+                  a0 <- a0 + r
+         FimEnquanto
+      senao
+           Enquanto (a0 >= an) faça
+                    Escreva(a0)
+                    a0 <- a0 - r
+           FimEnquanto
+      FimSe
+      Escreva(" Acabou!")
+
+Fimalgoritmo
