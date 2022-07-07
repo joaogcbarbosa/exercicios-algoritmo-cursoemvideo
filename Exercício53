@@ -1,0 +1,38 @@
+Algoritmo "53"
+
+Var
+
+   contPessoa, idade, contMasc, contFem, somaIdade, somaIdadeMasc, contIdadeFem: inteiro
+   sexo: caractere
+   mediaIdade, mediaIdadeMasc: real
+
+Inicio
+
+      contPessoa <- 1
+      Enquanto (contPessoa <= 5) faça
+               Escreva("Idade da",contPessoa,"ª pessoa: ")
+               Leia(idade)
+               somaIdade <- somaIdade + idade
+               mediaIdade <- somaIdade/contPessoa
+               contPessoa <- contPessoa + 1
+               Escreva("Sexo [M/F]: ")
+               Leia(Sexo)
+               Se (sexo = "M") então
+                  contMasc <- contMasc + 1
+                  somaIdadeMasc <- somaIdadeMasc + idade
+                  mediaIdadeMasc <- somaIdadeMasc/contMasc
+               FimSe
+               Se (sexo = "F") então
+                  contFem <- contFem + 1
+                  Se (idade < 20) então
+                     contIdadeFem <- contIdadeFem + 1
+                  FimSe
+               FimSe
+      FimEnquanto
+      Escreval("Homens cadastrados:",contMasc)
+      Escreval("Mulheres cadastradas:",contFem)
+      Escreval("Média da idade do grupo:",mediaIdade:4:1)
+      Escreval("Média de idade dos homens:",mediaIdadeMasc:4:1)
+      Escreva("Mulheres com menos de 20 anos:",contIdadeFem)
+      
+Fimalgoritmo

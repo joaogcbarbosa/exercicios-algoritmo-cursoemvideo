@@ -1,0 +1,25 @@
+Algoritmo "58"
+
+Var
+
+   idade, somaIdade, contAluno: inteiro
+   mediaIdade: real
+
+Inicio
+
+      contAluno <- 0
+      Enquanto (verdadeiro) faça
+               Escreva("Idade: ")
+               leia(idade)
+               EscrevaL("Idade computada")
+               Se (idade = 999) então
+                  interrompa
+               FimSe
+               contAluno <- contAluno + 1
+               somaIdade <- somaIdade + idade
+               mediaIdade <- somaIdade/contAluno
+      FimEnquanto
+      EscrevaL("O total de alunos na turma é",contAluno)
+      Escreva("A média de idade dos alunos é",mediaIdade)
+      
+Fimalgoritmo

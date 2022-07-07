@@ -1,0 +1,47 @@
+Algoritmo "59"
+
+Var
+
+   sexo, decisao, respNao: caractere
+   idade, maiorIdade, contMasc, somaIdadeMasc, maisNova, contFem: inteiro
+   mediaIdadeMasc: real
+
+Inicio
+
+      respNao <- "N"
+      Enquanto (verdadeiro) faça
+               Escreva("Sexo [M/F]: ")
+               Leia(sexo)
+               Escreva("Idade: ")
+               Leia(idade)
+               Escreva("Deseja continuar[S/N]? ")
+               Leia(decisao)
+               Se (decisao = respNao) entao
+                  interrompa
+               FimSe
+               Se (idade > maiorIdade) entao
+                  maiorIdade <- idade
+               FimSe
+               Se (sexo = "M") entao
+                  contMasc <- contMasc + 1
+                  somaIdadeMasc <- somaIdadeMasc + idade
+                  mediaIdadeMasc <- somaIdadeMasc/contMasc
+               FimSe
+               Se (sexo = "F") entao
+                  contFem <- contFem + 1
+                  Se (contFem = 1) entao
+                     maisNova <- idade
+                  senao
+                       se (idade < maisNova) entao
+                          maisNova <- idade
+                       FimSe
+                  FimSe
+               FimSe
+      FimEnquanto
+      
+      EscrevaL("A maior idade lida é",maiorIdade," anos.")
+      EscrevaL("Foram cadastrados",contMasc," homens.")
+      EscrevaL("A mulher mais nova tem",maisNova," anos.")
+      Escreva("A média de idade entre os homens é",mediaIdadeMasc)
+      
+Fimalgoritmo

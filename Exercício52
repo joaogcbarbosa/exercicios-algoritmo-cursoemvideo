@@ -1,0 +1,37 @@
+Algoritmo "52"
+
+Var
+
+   cont, somaIdade, idade, maiorQue18, menorQue5, maisVelho: inteiro
+   media: real
+
+Inicio
+
+      somaIdade <- 0
+      cont <- 1
+      Enquanto (cont <= 10) faça
+               Escreva("Idade da",cont,"ª pessoa: ")
+               Leia(idade)
+               somaIdade <- somaIdade + idade
+               Se (idade < 5) entao
+                  menorQue5 <- menorQue5 + 1
+               FimSe
+               Se (idade >= 18) entao
+                  maiorQue18 <- maiorQue18 + 1
+               FimSe
+               Se (cont = 1) entao
+                  maisVelho <- idade
+               senao
+                    Se (idade > maisVelho) entao
+                       maisVelho <- idade
+                    FimSe
+               FimSe
+               media <- somaIdade/cont
+               cont <- cont + 1
+      FimEnquanto
+      EscrevaL(maiorQue18," pessoas maiores de idade.")
+      EscrevaL(menorQue5," pessoas têm menos de 5 anos.")
+      EscrevaL("A média de idade do grupo é ",media:4:1,".")
+      Escreva("O mais velho tem",maisVelho," anos.")
+
+Fimalgoritmo

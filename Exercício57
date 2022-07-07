@@ -1,0 +1,29 @@
+Algoritmo "57"
+
+Var
+
+   sal, salMasc,salFem: real
+   sexo, decisao: caractere
+
+Inicio
+
+      Enquanto (verdadeiro) faça
+               Escreva("Salário: R$")
+               Leia(sal)
+               Escreva("Sexo [M/F]: ")
+               Leia(sexo)
+               Se (sexo = "M") então
+                  salMasc <- salMasc + sal
+               senao
+                    salFem <- salFem + sal
+               FimSe
+               Escreva("Deseja continuar [S/N]? ")
+               Leia(decisao)
+               Se (decisao = "N") então
+                  interrompa
+               FimSe
+      FimEnquanto
+      EscrevaL("O total pago para homens foi R$",salMasc)
+      Escreva("O total pago para mulheres foi R$",salFem)
+
+Fimalgoritmo

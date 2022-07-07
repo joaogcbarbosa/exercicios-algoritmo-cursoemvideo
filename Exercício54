@@ -1,0 +1,35 @@
+Algoritmo "54"
+
+Var
+
+   altura, peso, mediaAltura, somaAltura: real
+   c, contPeso, contPesoAltura1, contPesoAltura2: inteiro
+
+Inicio
+
+      c <- 1
+      Enquanto (c <= 7) faça
+               EscrevaL(c,"ª PESSOA")
+               EscrevaL("Peso (kg): ")
+               Leia(peso)
+               Se (peso > 90.0) então
+                  contPeso <- contPeso + 1
+               FimSe
+               Escreva("Altura (metros): ")
+               Leia(altura)
+               Se (peso < 50.0) e (altura < 1.60) então
+                  contPesoAltura1 <- contPesoAltura1 + 1
+               FimSe
+               Se (peso > 100.0) e (altura > 1.90) então
+                  contPesoAltura2 <- contPesoAltura2 + 1
+               FimSe
+               somaAltura <- somaAltura + altura
+               mediaAltura <- somaAltura/c
+               c <- c + 1
+      FimEnquanto
+      EscrevaL("A média de altura do grupo é",mediaAltura:4:2,"metros")
+      EscrevaL(contPeso," pessoas pesam mais de 90kg")
+      EscrevaL(contPesoAltura1," pessoas pesam menos de 50kg e medem menos de 1.60m")
+      Escreva(contPesoAltura2," pessoas pesam mais de 100kg e medem mais de 1.90m")
+
+Fimalgoritmo

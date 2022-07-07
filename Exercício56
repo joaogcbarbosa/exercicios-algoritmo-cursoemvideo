@@ -1,0 +1,19 @@
+Algoritmo "56"
+
+Var
+
+   num, soma: inteiro
+
+Inicio
+
+      Enquanto (Verdadeiro) faça
+               Escreva("Digite um número: ")
+               Leia(num)
+               Se (num = 1111) então
+                  interrompa
+               FimSe
+               soma <- soma + num
+      FimEnquanto
+      Escreva("A soma entre todos números digitados foi",soma)
+
+Fimalgoritmo

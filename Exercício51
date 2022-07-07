@@ -1,0 +1,29 @@
+Algoritmo "51"
+
+Var
+
+   c: inteiro
+   preco, maisCaro, maisBarato: real
+
+Inicio
+
+      c <- 1
+      Enquanto (c <= 8) faça
+               Escreva(c,"º produto: R$")
+               Leia(preco)
+               Se (c = 1) entao
+                  maisCaro <- preco
+                  maisBarato <- preco
+               senao
+                    Se (preco > maisCaro) entao
+                       maisCaro <- preco
+                    FimSe
+                    Se (preco < maisBarato) entao
+                       maisBarato <- preco
+                    FimSe
+               FimSe
+               c <- c + 1
+      FimEnquanto
+      Escreva("O produto mais caro custa R$",maisCaro," e o mais barato R$",maisBarato)
+      
+Fimalgoritmo

@@ -1,0 +1,35 @@
+Algoritmo "55"
+
+Var
+
+   computador, jogador, contTent, contVit, contDer : inteiro
+
+
+Inicio
+
+      contTent <- 1
+      computador <- (randi(5) + 1)
+      EscrevaL("Pensei em um número de 1 a 5. Tenta acertar!")
+      Enquanto (contTent <= 4) faça
+               Escreva("Qual número você chuta? ")
+               Leia(jogador)
+               Se (jogador = computador) então
+                  contVit <- contVit + 1
+                  interrompa
+               senao
+                    EscrevaL("Errou")
+                    contDer <- contDer + 1
+               FimSe
+               contTent <- contTent + 1
+      FimEnquanto
+      Se (contTent = 1) então
+         Escreva("Você acertou de primeira!")
+      senao
+           Se (contTent > 1) e (contTent <= 4) então
+              Escreva("Acertou! Mas precisou de",contTent," tentativas")
+           senao
+                Escreva("Você não conseguiu acertar :(")
+           FimSe
+      FimSe
+      
+Fimalgoritmo

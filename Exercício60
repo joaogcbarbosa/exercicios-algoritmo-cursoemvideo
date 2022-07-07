@@ -1,0 +1,68 @@
+Algoritmo "60"
+
+Var
+
+   nome, sexo, decisao, nomeMaisVelho, nomeMaisNova: caractere
+   idade, contPessoas, maisVelho, contFem, maisNova, somaIdade, contMascIdade30, contFemIdade18: inteiro
+   mediaIdade: real
+
+Inicio
+
+      contPessoas <- 0
+      
+      Enquanto (verdadeiro) faca
+      
+               contPessoas <- contPessoas + 1
+               
+               EscrevaL(contPessoas,"ª PESSOA")
+               Escreva("Nome: ")
+               Leia(nome)
+               
+               Escreva("Idade: ")
+               Leia(idade)
+               
+               somaIdade <- somaIdade + idade
+               mediaIdade <- somaIdade/contPessoas
+               
+               Escreva("Sexo[M/F]: ")
+               Leia(sexo)
+               
+               Se (idade > maisVelho) então
+                  maisVelho <- idade
+                  nomeMaisVelho <- nome
+               FimSe
+               
+               Se (sexo = "M") e (idade > 30) então
+                  contMascIdade30 <- contMascIdade30 + 1
+               FimSe
+               
+               Se (sexo = "F") então
+                  contFem <- contFem + 1
+                  Se (contFem = 1) então
+                     maisNova <- idade
+                     nomeMaisNova <- nome
+                  senao
+                       se (idade < maisNova) entao
+                          nomeMaisNova <- nome
+                       FimSe
+                  FimSe
+                  Se (idade < 18) então
+                     contFemIdade18 <- contFemIdade18 + 1
+                  FimSe
+               FimSe
+               
+               Escreva("Deseja continuar [S/N]? ")
+               leia(decisao)
+               Se (decisao = "N") então
+                  interrompa
+               FimSe
+
+      FimEnquanto
+      
+      EscrevaL("O nome da pessoa mais velha é ",nomeMaisVelho)
+      EscrevaL("O nome da mulher mais nova é ",nomeMaisNova)
+      EscrevaL("A média de idade do grupo é ",mediaIdade:4:2)
+      EscrevaL(contMascIdade30," homens têm mais de 30 anos.")
+      Escreva( contFemIdade18," mulheres têm menos de 18 anos.")
+
+Fimalgoritmo
