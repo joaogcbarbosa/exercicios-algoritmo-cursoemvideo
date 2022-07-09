@@ -1,0 +1,19 @@
+Algoritmo "70"
+
+Var
+
+   t0, t1, t2: inteiro
+
+Inicio
+
+      t0 <- 1
+      t1 <- 1
+      Escreva(t0, t1)
+      Para t2 <- 0 até 7 passo 1 faça
+           t2 <- t0 + t1
+           Escreva(t2)
+           t0 <- t1
+           t1 <- t2
+      FimPara
+
+Fimalgoritmo

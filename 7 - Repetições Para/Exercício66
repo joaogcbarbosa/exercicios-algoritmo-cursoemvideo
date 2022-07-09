@@ -1,0 +1,16 @@
+Algoritmo "66"
+
+Var
+
+   num, c, produto: inteiro
+
+Inicio
+
+      Escreva("Digite um número para ver sua tabuada: ")
+      Leia(num)
+      para c <- 1 até 10 passo 1 faça
+           produto <- num*c
+           EscrevaL(num," x",c, " =",produto)
+      FimPara
+
+Fimalgoritmo

@@ -1,0 +1,17 @@
+Algoritmo "67"
+
+Var
+
+   c, num: inteiro
+
+Inicio
+
+      Escreva("Digite um número: ")
+      Leia(num)
+      EscrevaL("Contagem...")
+      para c <- 0 até num passo 1 faça
+           Escreva(c)
+      FimPara
+      Escreva(" Fim!")
+
+Fimalgoritmo

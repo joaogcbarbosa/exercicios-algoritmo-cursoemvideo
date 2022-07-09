@@ -1,0 +1,41 @@
+Algoritmo "68"
+
+Var
+
+   sexo: caractere
+   peso, mediaPesoFeM, somaPesoFem, maiorPesoMasc: real
+   c, contFem, contMascPeso100: inteiro
+
+Inicio
+
+      para c <- 1 até 8 passo 1 faça
+           EscrevaL(c,"ª PESSOA")
+           Escreva("Sexo[M/F]: ")
+           Leia(sexo)
+           Escreva("Peso (kg): ")
+           Leia(peso)
+           Se (sexo = "F") então
+              contFem <- contFem + 1
+              somaPesoFem <- somaPesoFem + peso
+              mediaPesoFem <- somaPesoFem/contFem
+           FimSe
+           Se (sexo = "M") e (peso > 100.0) então
+              contMascPeso100 <- contMascPeso100 + 1
+           FimSe
+           Se (c = 1) e (sexo = "M") então
+              maiorPesoMasc <- peso
+           senao
+                se (peso > maiorPesoMasc) entao
+                   maiorPesoMasc <- peso
+                FimSe
+           FimSe
+      FimPara
+      
+      EscrevaL(contFem," mulheres foram cadastradas")
+      EscrevaL(contMascPeso100," homens pesam mais de 100kg")
+      EscrevaL("A média de peso entre as mulheres é",mediaPesoFem)
+      Escreva("O maior peso entre os homens é",maiorPesoMasc,"kg")
+
+
+
+Fimalgoritmo

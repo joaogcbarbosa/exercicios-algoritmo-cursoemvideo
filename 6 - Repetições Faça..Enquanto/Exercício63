@@ -1,0 +1,36 @@
+Algoritmo "63"
+
+Var
+
+   contNumeros, num, somaNumeros, menor, contPar: inteiro
+   decisao: caractere
+   mediaNumeros: real
+
+Inicio
+
+      Repita
+            contNumeros <- contNumeros + 1
+            Escreva(contNumeros,"º número: ")
+            Leia(num)
+            somaNumeros <- somaNumeros + num
+            mediaNumeros <- somaNumeros/contNumeros
+            Se (contNumeros = 1) então
+               menor <- num
+            senao
+                 Se (num < menor) entao
+                    menor <- num
+                 FimSe
+            FimSe
+            Se (num % 2 = 0) então
+               contPar <- contPar + 1
+            FimSe
+            Escreva("Deseja continuar[S/N]? ")
+            Leia(decisao)
+      Até(decisao = "N")
+      
+      EscrevaL("A soma entre todos valores inseridos é",somaNumeros)
+      EscrevaL("O menor valor inserido foi ",menor)
+      EscrevaL("A média entre todos valores é",mediaNumeros)
+      Escreva(contPar," valores são pares")
+
+Fimalgoritmo

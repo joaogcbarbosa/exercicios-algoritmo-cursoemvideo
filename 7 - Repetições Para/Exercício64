@@ -1,0 +1,14 @@
+Algoritmo "64"
+
+Var
+
+   c: inteiro
+
+Inicio
+
+      Para c <- 0 até 40 passo 5 faça
+           Escreva(c)
+      FimPara
+      Escreva(" Acabou!")
+
+Fimalgoritmo

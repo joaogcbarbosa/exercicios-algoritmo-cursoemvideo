@@ -1,0 +1,32 @@
+Algoritmo "62"
+
+Var
+
+   contPessoas, idade, somaIdade, contMenor21, contIdade: inteiro
+   decisao: caractere
+   mediaIdade: real
+
+Inicio
+
+      Repita
+            contPessoas <- contPessoas + 1
+            Escreva("Idade da",contPessoas,"ª pessoa: ")
+            Leia(idade)
+            contIdade <- contIdade + 1
+            somaIdade <- somaIdade + idade
+            mediaIdade <- somaIdade/contIdade
+            Se (idade < 21) então
+             contMenor21 <- contMenor21 + 1
+            FimSe
+            Escreva("Deseja continuar[S/N]? ")
+            Leia(decisao)
+      Até (decisao = "N")
+      
+      EscrevaL("Foram digitadas",contIdade," idades.")
+      EscrevaL("A média entre as idades  digitadas é",mediaIdade)
+      Escreva(contMenor21," pessoas têm menos de 21 anos.")
+      
+      
+
+
+Fimalgoritmo

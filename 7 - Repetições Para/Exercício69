@@ -1,0 +1,20 @@
+Algoritmo "69"
+
+Var
+
+   a1, r, a10, somaPA: inteiro
+
+Inicio
+
+      Escreva("Primeiro termo: ")
+      Leia(a1)
+      Escreva("Razão: ")
+      Leia(r)
+      a10 <- a1 + (9*r)
+      para r <- a1 até a10 passo r faça
+           EscrevaL(r)
+           somaPA <- somaPA + r
+      FimPara
+      Escreva("A soma de todos termos da PA é",somaPA)
+
+Fimalgoritmo

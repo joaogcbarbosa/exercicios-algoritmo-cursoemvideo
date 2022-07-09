@@ -1,0 +1,15 @@
+Algoritmo "61"
+
+Var
+
+   c: inteiro
+
+Inicio
+
+      Repita
+          Escreva(c)
+          c <- c + 3
+      Até (c > 30)
+      Escreva(" Acabou!")
+
+Fimalgoritmo
