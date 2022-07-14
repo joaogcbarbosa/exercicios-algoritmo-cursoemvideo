@@ -1,0 +1,15 @@
+Algoritmo "73"
+
+Var
+
+   v: vetor[0..9] de inteiro
+   i: inteiro
+
+Inicio
+
+      para i <- 9 até 0 passo -1 faça
+           v[i] <- i
+           Escreva(v[i])
+      fimpara
+
+Fimalgoritmo

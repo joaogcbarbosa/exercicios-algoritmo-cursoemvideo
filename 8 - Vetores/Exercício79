@@ -1,0 +1,22 @@
+Algoritmo "79"
+
+Var
+
+   v: vetor[1..10] de inteiro
+   i, num: inteiro
+
+Inicio
+
+      para i <- 1 até 10 faça
+           Escreva(i,"º número: ")
+           Leia(num)
+           v[i] <- num
+      fimpara
+      
+      para i <- 1 até 10 faça
+           se (v[i] % 2 = 0) entao
+              EscrevaL(v[i]," na posição",i)
+           fimse
+      fimpara
+
+Fimalgoritmo

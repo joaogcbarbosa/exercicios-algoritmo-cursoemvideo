@@ -1,0 +1,27 @@
+Algoritmo "78"
+
+Var
+
+   v: vetor[1..15] de inteiro
+   i, num: inteiro
+
+Inicio
+
+      para i <- 1 até 15 faça
+           Escreva(i,"º número: ")
+           Leia(num)
+           v[i] <- num
+      fimpara
+      
+      para i <- 1 até 15 faça
+           EscrevaL(v[i])
+      fimpara
+      
+
+      para i <- 1 até 15 faça
+           Se (v[i] % 10 = 0) entao
+              EscrevaL(v[i]," na posição",i)
+           FimSe
+      fimpara
+
+Fimalgoritmo

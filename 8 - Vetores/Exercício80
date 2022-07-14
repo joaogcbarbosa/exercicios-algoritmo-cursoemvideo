@@ -1,0 +1,19 @@
+Algoritmo "80"
+
+Var
+
+   v: vetor[1..30] de inteiro
+   i, num: inteiro
+
+Inicio
+
+      Escreva("Digite um número de 1 a 15: ")
+      Leia(num)
+      para i <- 1 até 30 faça
+           v[i] <- (randi(15) + 1)
+           se (v[i] = num) entao
+              EscrevaL("Chave encontrada na posição", i)
+           fimse
+      fimpara
+
+Fimalgoritmo
