@@ -1,0 +1,40 @@
+Algoritmo "89"
+
+Var
+
+   decisao: inteiro
+
+Procedimento Gerador(msg: caractere)
+Inicio
+
+      LimpaTela
+      Escolha decisao
+             Caso 1
+                  EscrevaL("+-------=======------+")
+                  EscrevaL(msg)
+                  EscrevaL("+-------=======------+")
+             Caso 2
+                  EscrevaL("~~~~~~~~:::::::~~~~~~~")
+                  EscrevaL(msg)
+                  EscrevaL("~~~~~~~~:::::::~~~~~~~")
+             Caso 3
+                  EscrevaL("<<<<<<<<------->>>>>>>")
+                  EscrevaL(msg)
+                  EscrevaL("<<<<<<<<------->>>>>>>")
+             Outrocaso
+                       EscrevaL("Inválido")
+      FimEscolha
+
+FimProcedimento
+
+
+Inicio
+
+      EscrevaL("Qual borda gostaria de botar na mensagem?")
+      EscrevaL("[1] para +-------=======------+")
+      EscrevaL("[2] para ~~~~~~~~:::::::~~~~~~~")
+      EscrevaL("[3] para <<<<<<<<------->>>>>>>")
+      Leia(decisao)
+      Gerador("MENSAGEM")
+
+Fimalgoritmo

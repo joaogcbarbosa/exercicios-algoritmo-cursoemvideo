@@ -1,0 +1,22 @@
+Algoritmo "88"
+
+Var
+
+Procedimento Gerador(msg: caractere)
+
+Inicio
+
+      EscrevaL("-------------")
+      EscrevaL(msg)
+      EscrevaL("-------------")
+
+FimProcedimento
+
+Inicio
+
+      Gerador("Aprendendo Portugol")
+      Gerador("Aprendendo Python")
+      Gerador("Aprendendo Java")
+      Gerador("Aprendendo .NET")
+
+Fimalgoritmo

@@ -1,0 +1,19 @@
+Algoritmo "86"
+
+Var
+
+
+Procedimento Gerador()
+Inicio
+
+    EscrevaL("-----------")
+    EscrevaL("Olá, mundo!")
+    EscrevaL("-----------")
+    
+FimProcedimento
+
+Inicio
+
+     Gerador()
+
+Fimalgoritmo

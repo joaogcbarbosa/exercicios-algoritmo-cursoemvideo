@@ -1,0 +1,22 @@
+Algoritmo "90"
+
+Var
+
+   x, y: inteiro
+   
+Procedimento Somador(a, b: inteiro)
+Inicio
+
+      EscrevaL("A soma entre os números digitados é", a + b)
+
+FimProcedimento
+
+Inicio
+
+      Escreva("Digite um número: ")
+      Leia(x)
+      Escreva("Digite outro: ")
+      Leia(y)
+      Somador(x, y)
+
+Fimalgoritmo
