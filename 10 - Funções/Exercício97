@@ -1,0 +1,40 @@
+Algoritmo "97"
+
+Var
+
+   x, y, z, Maior: inteiro
+   
+ Função verificaMaior(var a, b, c: inteiro): inteiro
+ var
+ 
+ M: inteiro
+ 
+ Inicio
+ 
+
+ Se (a >= b) e (a >= c) entao
+    M <- a
+ senao
+      se (b >= a) e (b >= c) entao
+         M <- b
+      senao
+           M <- c
+      fimse
+ FimSe
+ 
+ retorne M
+
+ FimFunção
+
+ Inicio
+
+       Escreva("Primeiro número: ")
+       Leia(x)
+       Escreva("Segundo número: ")
+       Leia(y)
+       Escreva("Terceiro número: ")
+       Leia(z)
+       Maior <- verificaMaior(x, y, z)
+       Escreva("O maior número inserido foi",Maior)
+       
+Fimalgoritmo

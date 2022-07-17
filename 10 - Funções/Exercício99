@@ -1,0 +1,24 @@
+Algoritmo "99"
+
+Var
+
+   a, b: inteiro
+   P: real
+   
+Função Potencia(x, y: inteiro): real
+Inicio
+
+      retorne(x^y)
+
+FimFunção
+
+Inicio
+
+      Escreva("Qual número deseja exponenciar? ")
+      Leia(a)
+      Escreva("A qual potência? ")
+      Leia(b)
+      P <- Potencia(a, b)
+      Escreva(a," elevado a",b," é igual a",P)
+      
+FimAlgoritmo

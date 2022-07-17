@@ -1,0 +1,37 @@
+Algoritmo "93"
+
+Var
+
+   I, F, P: inteiro
+   
+Procedimento Contador(x, y, z: inteiro)
+var
+
+   c: inteiro
+
+Inicio
+
+      Se (x < y) então
+         para c <- x até y passo z faça
+              Escreva(c," >>")
+         FimPara
+      senao
+           para c <- x até y passo -z faça
+                Escreva(c," >>")
+           FimPara
+      FimSe
+      Escreva(" FIM")
+
+FimProcedimento
+
+Inicio
+
+      Escreva("Início: ")
+      Leia(I)
+      Escreva("Fim: ")
+      Leia(F)
+      Escreva("Passo: ")
+      Leia(P)
+      Contador(I, F, P)
+
+Fimalgoritmo
