@@ -1,0 +1,33 @@
+Algoritmo "98"
+
+Var
+
+   x, y: inteiro
+   SS: real
+   
+Função SuperSomador(a, b: inteiro): real
+var
+
+   termos, c: inteiro
+   SomaTotal: real
+
+Inicio
+
+      para c <- a até b passo 1 faça:
+           termos <- termos + 1
+      FimPara
+      SomaTotal <- ((a + b)*termos)/2
+      retorne SomaTotal
+
+FimFunção
+
+Inicio
+
+      Escreva("Primeiro número: ")
+      Leia(x)
+      Escreva("Último número: ")
+      Leia(y)
+      SS <- SuperSomador(x, y)
+      Escreva("A soma de todos números de",x," até",y," é",SS)
+
+Fimalgoritmo

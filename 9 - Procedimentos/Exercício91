@@ -1,0 +1,26 @@
+Algoritmo "91"
+
+Var
+
+   x, y: inteiro
+
+Procedimento verificaMaior(a, b: inteiro)
+Inicio
+
+      Se (a > b) então
+         Escreva(a," é maior que",b)
+      senao
+           Escreva(b," é maior que",a)
+      FimSe
+
+FimProcedimento
+
+Inicio
+
+      Escreva("Digite um número: ")
+      Leia(x)
+      Escreva("Digite outro: ")
+      Leia(y)
+      verificaMaior(x, y)
+
+Fimalgoritmo

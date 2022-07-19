@@ -1,0 +1,23 @@
+Algoritmo "95"
+
+Var
+
+   x, y, res: inteiro
+
+Função Somador(a, b: inteiro): inteiro
+Inicio
+
+      retorne(a + b)
+
+FimFunção
+
+Inicio
+
+      Escreva("Digite um número: ")
+      Leia(x)
+      Escreva("Digite outro: ")
+      Leia(y)
+      res <- Somador(x, y)
+      EscrevaL("O valor da soma é",res)
+
+Fimalgoritmo
